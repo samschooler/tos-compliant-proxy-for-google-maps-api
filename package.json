@@ -7,7 +7,8 @@
     "tos-compliant-proxy-for-google-maps-api": "./src/app.js"
   },
   "scripts": {
-    "start": "node ./src/app.js"
+    "start": "node ./src/app.js",
+    "test": "mocha --timeout 10000 --exit"
   },
   "author": "Sam Schooler",
   "license": "MIT",
@@ -18,5 +19,12 @@
     "node-cache": "^5.1.2",
     "redis": "^4.7.0",
     "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "nock": "^13.5.5",
+    "sinon": "^18.0.0",
+    "supertest": "^7.0.0"
   }
 }
