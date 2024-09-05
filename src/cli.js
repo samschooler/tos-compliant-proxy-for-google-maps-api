@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const createServer = require("./server");
 
 // If the file is run directly, start the server
@@ -9,5 +11,3 @@ if (require.main === module) {
     });
   });
 }
-
-module.exports = createServer;
